@@ -1,0 +1,83 @@
+
+/* Entire calculator */
+.calculator{
+	flex: 0 0 35%;
+}
+
+/* All Buttons */
+.calc-buttons{
+	display: flex;
+	flex-wrap: wrap;
+}
+button{
+	flex:0 0 25%;
+	border: 1px solid black;
+	padding: 0.25rem 0;
+	transition: all 0.5s ease;
+	font-family: "Verdana";
+}
+
+
+/* Top screen input/output */
+.calc-display{
+	width: 100%;
+	font-size: 5rem;
+	padding: 0.5rem;
+	background:#111C24;
+	color: white;
+	border:none;
+	border-radius:15px 15px 0px 0px;
+	font-family: "Verdana";
+}
+
+/*Prevents blue outline after press */
+button:focus {
+  outline: none;
+}
+/* Lightens buttons when hovered over */
+button:hover{
+	opacity:0.6;
+}
+
+/* (+ - / *) */
+.btn-operation{
+	background:#FF9A4E;
+	color: white;
+}
+
+/* 1-9 & . */
+.btn-value{
+	background:#616365;
+	color: white;
+}
+
+.btn,.btn-equal,.btn-clear{
+	font-size: 4rem;
+}
+
+/* = */
+.btn-equal{
+	background: #50C878;
+}
+
+/* C */
+.btn-clear{
+	background: #8B0000;
+}
+
+/* Page */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Times New Roman", Times, serif;
+
+}
